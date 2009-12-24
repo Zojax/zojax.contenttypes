@@ -1,0 +1,25 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:i18n="http://namespaces.zope.org/i18n"
+   xmlns:zojax="http://namespaces.zope.org/zojax"
+   i18n_domain="zojax.contenttypes">
+
+  <zojax:product
+     name="zojax-contenttypes"
+     title="Content types"
+     description="Basic content types for zojax."
+     schema=".interfaces.IContentTypesProduct"
+     class=".product.ContentTypesProduct"
+     configurable="false" />
+
+  <!-- translations -->
+  <i18n:registerTranslations directory="locales"/>
+
+  <!-- styles -->
+  <zojax:resourceinclude
+     name="zojax-contenttypes.css"
+     library="zojax"
+     type="stylesheet"
+     file="styles.css" filetype="zrt" />
+
+</configure>
